@@ -64,6 +64,20 @@ public class DynamicArray {
         }
     }
 
+    public Object remove(int index) {
+
+        Object aux = array[index];
+
+        for (int i = index; i < size; i++) {
+            array[i] = array[i + 1];
+        }
+
+        array[size] = null;
+        size--;
+
+        return aux;
+    }
+
     public int search(Object data) {
 
         for (int i = 0; i < size; i++) {
