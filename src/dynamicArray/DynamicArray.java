@@ -2,9 +2,9 @@ package dynamicArray;
 
 public class DynamicArray {
 
-    int size;
-    int capacity = 10;
-    Object[] array;
+    protected int size;
+    protected int capacity = 10;
+    protected Object[] array;
 
     public DynamicArray() {
         this.array = new Object[capacity];
