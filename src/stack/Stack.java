@@ -27,9 +27,7 @@ public class Stack extends DynamicArray {
 
     public Object peek() {
 
-        Object aux = array[size - 1];
-
-        return aux;
+        return array[size - 1];
     }
 
 
