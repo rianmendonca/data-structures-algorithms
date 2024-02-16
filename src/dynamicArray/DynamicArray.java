@@ -125,6 +125,7 @@ public class DynamicArray {
         return size == 0;
     }
 
+    @Override
     public String toString() {
 
         StringBuilder string = new StringBuilder();
