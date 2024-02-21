@@ -35,6 +35,9 @@ public class Algorithms {
 
     }
 
+    // Average case: O(log(log(n)))
+    // Worst case: O(n)
+
     public static int interpolationSearch(int[] array, int value) {
 
         int high = array.length - 1;
