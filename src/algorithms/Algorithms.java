@@ -35,4 +35,28 @@ public class Algorithms {
 
     }
 
+    public static int interpolationSearch(int[] array, int value) {
+
+        int high = array.length - 1;
+        int low = 0;
+
+        while (value >= array[low] && value <= array[high] && low <= high) {
+
+            int probe = low + ((high - low) / (array[high] - array[low])) * (value - array[low]);
+
+            System.out.println(probe);
+
+            if (array[probe] == value) {
+                return probe;
+            } else if (array[probe] < value) {
+                low = probe + 1;
+            } else {
+                high = probe - 1;
+            }
+        }
+
+        return -1;
+
+    }
+
 }
