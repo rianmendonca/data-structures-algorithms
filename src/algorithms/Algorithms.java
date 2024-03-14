@@ -170,6 +170,8 @@ public class Algorithms {
 
     }
 
+
+    // O(n log(n))
     public static void quickSort(int[] array, int start, int end) {
 
         if (end <= start) return;
